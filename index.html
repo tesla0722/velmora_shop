@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Velomora Shop — women’s and men’s clothing, shoes, and accessories. Free shipping over $100, easy returns, and size guides for every order."
+  />
+  <title>Velomora Shop — Clothing &amp; Accessories Online</title>
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-utility">
+      <div class="wrap header-utility__inner">
+        <span>Free standard shipping on orders <strong>$100+</strong></span>
+        <span class="header-utility__dot" aria-hidden="true"></span>
+        <span>Free returns within <strong>30 days</strong></span>
+        <span class="header-utility__dot" aria-hidden="true"></span>
+        <a href="tel:+18005550199" class="header-utility__link">1-800-555-0199</a>
+        <span class="header-utility__dot header-utility__dot--hide-mobile" aria-hidden="true"></span>
+        <a href="#customer-care" class="header-utility__link header-utility__link--hide-mobile">Help center</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="wrap inner">
+        <a href="index.html" class="logo logo--brand" aria-label="Velomora Shop — Home">
+        <img class="logo-mark" src="assets/logo-mark.svg" width="48" height="48" alt="" />
+        <span class="logo-type">
+          <span class="logo-type__name">Velomora</span>
+          <span class="logo-type__shop">shop</span>
+        </span>
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html#womens">New arrivals</a></li>
+          <li><a href="shop.html#womens">Women</a></li>
+          <li><a href="shop.html#mens">Men</a></li>
+          <li><a href="shop.html#accessories">Accessories</a></li>
+          <li><a href="shop.html#sale">Sale</a></li>
+          <li><a href="#story">Our story</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="header-cart" id="header-cart-btn" aria-label="Open shopping bag">
+          Cart
+          <span class="header-cart-count" id="header-cart-count" hidden></span>
+        </button>
+        <button type="button" class="header-cta" id="header-shop-btn">Shop</button>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div class="hero-copy">
+        <p class="hero-tag">New season</p>
+        <h1>Clothing &amp; accessories you’ll wear on repeat.</h1>
+        <p class="lead">
+          Everyday essentials and elevated pieces for work, weekend, and travel—thoughtfully made, fairly priced, with the fit and fabric details you care about.
+        </p>
+        <div class="hero-btns">
+          <a href="shop.html" class="btn-primary">Shop all</a>
+          <a href="#size-guide" class="btn-ghost">Size guide</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900&q=85&auto=format&fit=crop"
+          alt="Woman in elegant beige coat and fashion styling"
+          width="900"
+          height="1125"
+          loading="eager"
+        />
+        <div class="hero-badge">
+          <small>New arrivals</small>
+          <span>Soft tailoring &amp; linen</span>
+        </div>
+      </figure>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner">
+        <span>Free shipping $100+ · 30-day free returns · Secure checkout · Buy now, pay later where available ·</span>
+        <span>Free shipping $100+ · 30-day free returns · Secure checkout · Buy now, pay later where available ·</span>
+        <span>Free shipping $100+ · 30-day free returns · Secure checkout · Buy now, pay later where available ·</span>
+        <span>Free shipping $100+ · 30-day free returns · Secure checkout · Buy now, pay later where available ·</span>
+      </div>
+    </div>
+
+    <section class="trust-pillars" aria-label="Why shop with us">
+      <div class="wrap trust-pillars__grid">
+        <div class="trust-pillar">
+          <h3 class="trust-pillar__title">Secure checkout</h3>
+          <p class="trust-pillar__text">Encrypted payments. Visa, Mastercard, Amex, PayPal, and Apple Pay.</p>
+        </div>
+        <div class="trust-pillar">
+          <h3 class="trust-pillar__title">Easy returns</h3>
+          <p class="trust-pillar__text">30 days, unworn items with tags. Prepaid label included in most regions.</p>
+        </div>
+        <div class="trust-pillar">
+          <h3 class="trust-pillar__title">Fit help</h3>
+          <p class="trust-pillar__text">Detailed measurements and a <a href="#size-guide">size guide</a> on every product type.</p>
+        </div>
+        <div class="trust-pillar">
+          <h3 class="trust-pillar__title">Real support</h3>
+          <p class="trust-pillar__text">Questions? <a href="tel:+18005550199">Call</a> or <a href="#customer-care">visit help center</a> for shipping &amp; exchanges.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="women" class="section wrap">
+      <div class="section-head">
+        <h2>Shop by mood</h2>
+        <p>From morning meetings to golden-hour plans—build a wardrobe that flows with your day.</p>
+      </div>
+      <div class="cats">
+        <a href="shop.html#womens" class="cat-card cat-card--link">
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=85&auto=format&fit=crop"
+            alt="Street style fashion with layered clothing"
+            width="800"
+            height="1067"
+            loading="lazy"
+          />
+          <span class="cat-card__cap">
+            <span class="cat-card__eyebrow">Urban layers</span>
+            <span class="cat-card__title">City edit</span>
+          </span>
+        </a>
+        <a href="shop.html#womens" class="cat-card cat-card--link">
+          <img
+            src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=85&auto=format&fit=crop"
+            alt="Elegant fashion portrait in soft light"
+            width="800"
+            height="1067"
+            loading="lazy"
+          />
+          <span class="cat-card__cap">
+            <span class="cat-card__eyebrow">Evening</span>
+            <span class="cat-card__title">After dark</span>
+          </span>
+        </a>
+        <a href="shop.html#womens" class="cat-card cat-card--link">
+          <img
+            src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=85&auto=format&fit=crop"
+            alt="Minimal fashion on neutral background"
+            width="800"
+            height="1067"
+            loading="lazy"
+          />
+          <span class="cat-card__cap">
+            <span class="cat-card__eyebrow">Essentials</span>
+            <span class="cat-card__title">Quiet luxury</span>
+          </span>
+        </a>
+      </div>
+      <p class="shop-teaser-cta wrap">
+        <a href="shop.html#womens" class="btn-primary">Shop women’s</a>
+      </p>
+    </section>
+
+    <section id="men" class="section wrap">
+      <div class="section-head">
+        <h2>Men’s</h2>
+        <p>Sharp cuts, breathable knits, and pieces that layer without fuss.</p>
+      </div>
+      <div class="cats cats--2">
+        <a href="shop.html#mens" class="cat-card cat-card--wide cat-card--link">
+          <img
+            src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=1000&q=85&auto=format&fit=crop"
+            alt="Man in tailored suit and casual style"
+            width="1000"
+            height="625"
+            loading="lazy"
+          />
+          <span class="cat-card__cap">
+            <span class="cat-card__eyebrow">Tailoring</span>
+            <span class="cat-card__title">Structured &amp; soft</span>
+          </span>
+        </a>
+        <a href="shop.html#mens" class="cat-card cat-card--wide cat-card--link">
+          <img
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1000&q=85&auto=format&fit=crop"
+            alt="Man in smart-casual layered outfit"
+            width="1000"
+            height="625"
+            loading="lazy"
+          />
+          <span class="cat-card__cap">
+            <span class="cat-card__eyebrow">Weekend</span>
+            <span class="cat-card__title">Off-duty classics</span>
+          </span>
+        </a>
+      </div>
+      <p class="shop-teaser-cta">
+        <a href="shop.html#mens" class="btn-primary">Shop men’s</a>
+      </p>
+    </section>
+
+    <section class="section wrap shop-teaser-accessories">
+      <div class="section-head">
+        <h2>Accessories</h2>
+        <p>Bags, jewelry, shoes, and belts—see everything on the shop.</p>
+      </div>
+      <p class="shop-teaser-cta">
+        <a href="shop.html#accessories" class="btn-ghost">Shop accessories</a>
+      </p>
+    </section>
+
+    <section id="story" class="section wrap editorial">
+      <div class="editorial-img">
+        <img
+          src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&q=85&auto=format&fit=crop"
+          alt="Fashion boutique interior with clothing racks"
+          width="600"
+          height="800"
+          loading="lazy"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=85&auto=format&fit=crop"
+          alt="Fabric texture and tailoring detail"
+          width="600"
+          height="800"
+          loading="lazy"
+        />
+      </div>
+      <div class="editorial-text">
+        <h2>Quality you can see and feel.</h2>
+        <p>
+          Velomora Shop works directly with mills and manufacturers that meet our standards for fabric integrity and fair labor. We test fit on real bodies, publish measurements, and restock proven bestsellers instead of chasing one-off trends.
+        </p>
+        <p>
+          Whether you’re building a capsule wardrobe or refreshing for the season, we focus on pieces that pair easily and last—so you buy less and wear more.
+        </p>
+        <a href="shop.html" class="link">Shop the collection</a>
+      </div>
+    </section>
+
+    <section id="size-guide" class="section wrap size-guide">
+      <div class="section-head">
+        <h2>Size guide</h2>
+        <p>How to choose your size when shopping online—same approach used by leading apparel retailers.</p>
+      </div>
+      <div class="size-guide__body">
+        <ol class="size-guide__steps">
+          <li><strong>Measure yourself</strong> with a soft tape: bust/chest, waist, hips, inseam for pants.</li>
+          <li><strong>Compare</strong> to the chart on each product page (we list garment measurements, not just body ranges).</li>
+          <li><strong>Between sizes?</strong> Size up for a relaxed fit; size down for a closer cut on stretch fabrics.</li>
+        </ol>
+        <p class="size-guide__note">
+          Still unsure? Contact us with your measurements—we’re happy to recommend a size before you order.
+        </p>
+      </div>
+    </section>
+
+    <section id="customer-care" class="section customer-care">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Customer care</h2>
+          <p>Shipping, returns, and order questions—transparent policies like major online clothing stores.</p>
+        </div>
+        <dl class="care-faq">
+          <div class="care-faq__item">
+            <dt>Shipping</dt>
+            <dd>Standard delivery 5–7 business days; express 2–3 days (select at checkout). Tracking is emailed when your order ships.</dd>
+          </div>
+          <div class="care-faq__item">
+            <dt>Returns &amp; exchanges</dt>
+            <dd>Full refund or exchange within 30 days on unworn items with tags attached. Initiate a return from your order email or contact support for a prepaid label where available.</dd>
+          </div>
+          <div class="care-faq__item">
+            <dt>Payment</dt>
+            <dd>We accept major credit and debit cards, PayPal, Apple Pay, and buy-now-pay-later where offered. Charges appear as <strong>VELOMORA SHOP</strong>.</dd>
+          </div>
+          <div class="care-faq__item">
+            <dt>Contact</dt>
+            <dd>
+              <a href="tel:+18005550199">1-800-555-0199</a> · Mon–Sat 9am–6pm ET ·
+              <a href="mailto:hello@velomorashop.com">hello@velomorashop.com</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="wrap">
+        <h2>Email sign-up</h2>
+        <p>Get early access to sales, new arrivals, and restocks—unsubscribe anytime.</p>
+        <form action="#" method="get" onsubmit="return false;">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo logo--brand logo--footer" aria-label="Velomora Shop — Home">
+          <img class="logo-mark" src="assets/logo-mark.svg" width="40" height="40" alt="" />
+          <span class="logo-type">
+            <span class="logo-type__name">Velomora</span>
+            <span class="logo-type__shop">shop</span>
+          </span>
+        </a>
+        <p>
+          Independent clothing &amp; accessories retailer. Designed in-house, shipped from our U.S. warehouse to customers
+          nationwide.
+        </p>
+        <p class="foot-pay" aria-label="Accepted payment methods">
+          <span>Visa</span> · <span>Mastercard</span> · <span>Amex</span> · <span>PayPal</span> · <span>Apple Pay</span>
+        </p>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop.html">All products</a></li>
+          <li><a href="shop.html#womens">New arrivals</a></li>
+          <li><a href="shop.html#womens">Women</a></li>
+          <li><a href="shop.html#mens">Men</a></li>
+          <li><a href="shop.html#accessories">Accessories</a></li>
+          <li><a href="shop.html#sale">Sale</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="#customer-care">Shipping &amp; tracking</a></li>
+          <li><a href="#customer-care">Returns &amp; exchanges</a></li>
+          <li><a href="#size-guide">Size guide</a></li>
+          <li><a href="#customer-care">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#story">About Velomora</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Velomora Shop. All rights reserved.</span>
+      <span class="foot-bottom__links">
+        <a href="https://unsplash.com" rel="noopener noreferrer">Photography credits</a>
+      </span>
+    </div>
+  </footer>
+
+  <div id="cart-root" class="cart-root" aria-hidden="true">
+    <div class="cart-backdrop" aria-hidden="true"></div>
+    <aside class="cart-panel" role="dialog" aria-label="Shopping bag">
+      <div class="cart-panel-header">
+        <h2>Shopping cart</h2>
+        <button type="button" class="cart-close" id="cart-close" aria-label="Close bag">×</button>
+      </div>
+      <div class="cart-lines" id="cart-lines"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-amount">$0.00</span>
+        </div>
+        <button type="button" class="cart-checkout" id="cart-checkout-btn" disabled>Checkout</button>
+        <p class="cart-note">Taxes and shipping calculated at checkout. SSL-secure payment.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div id="checkout-root" class="checkout-root" aria-hidden="true">
+    <div class="checkout-dialog" role="dialog" aria-labelledby="checkout-title" aria-modal="true">
+      <h2 id="checkout-title">Checkout</h2>
+      <p>Enter your email and shipping address. You’ll review payment on the next step in a full store integration.</p>
+      <form id="checkout-form">
+        <div class="checkout-field">
+          <label for="checkout-email">Email (for order confirmation)</label>
+          <input type="email" id="checkout-email" name="email" required autocomplete="email" />
+        </div>
+        <div class="checkout-field">
+          <label for="checkout-address">Shipping address</label>
+          <textarea id="checkout-address" name="address" required placeholder="Street, city, state, ZIP"></textarea>
+        </div>
+        <p class="checkout-legal">
+          By placing an order you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        <div class="checkout-actions">
+          <button type="button" class="checkout-cancel" id="checkout-cancel">Back to bag</button>
+          <button type="submit" class="checkout-submit">Place order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="products-data.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

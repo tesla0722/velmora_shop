@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Shop Velomora — women’s and men’s clothing, shoes, and accessories. New arrivals, menswear, and accessories in one place."
+  />
+  <title>Shop — Velomora Shop</title>
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-utility">
+      <div class="wrap header-utility__inner">
+        <span>Free standard shipping on orders <strong>$100+</strong></span>
+        <span class="header-utility__dot" aria-hidden="true"></span>
+        <span>Free returns within <strong>30 days</strong></span>
+        <span class="header-utility__dot" aria-hidden="true"></span>
+        <a href="tel:+18005550199" class="header-utility__link">1-800-555-0199</a>
+        <span class="header-utility__dot header-utility__dot--hide-mobile" aria-hidden="true"></span>
+        <a href="index.html#customer-care" class="header-utility__link header-utility__link--hide-mobile">Help center</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="wrap inner">
+        <a href="index.html" class="logo logo--brand" aria-label="Velomora Shop — Home">
+          <img class="logo-mark" src="assets/logo-mark.svg" width="48" height="48" alt="" />
+          <span class="logo-type">
+            <span class="logo-type__name">Velomora</span>
+            <span class="logo-type__shop">shop</span>
+          </span>
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html#womens" aria-current="page">New arrivals</a></li>
+            <li><a href="shop.html#womens">Women</a></li>
+            <li><a href="shop.html#mens">Men</a></li>
+            <li><a href="shop.html#accessories">Accessories</a></li>
+            <li><a href="shop.html#sale">Sale</a></li>
+            <li><a href="index.html#story">Our story</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="header-cart" id="header-cart-btn" aria-label="Open shopping cart">
+            Cart
+            <span class="header-cart-count" id="header-cart-count" hidden></span>
+          </button>
+          <button type="button" class="header-cta" id="header-shop-btn">Top</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shop-page">
+    <div id="shop-top" class="wrap shop-breadcrumb shop-breadcrumb--padded" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="shop-breadcrumb__sep">/</span>
+      <span aria-current="page">Shop</span>
+    </div>
+
+    <nav class="shop-jump wrap" aria-label="Shop categories">
+      <a href="#womens">Women’s</a>
+      <a href="#mens">Men’s</a>
+      <a href="#accessories">Accessories</a>
+    </nav>
+
+    <section id="sale" class="shop-sale-banner">
+      <div class="wrap shop-sale-banner__inner">
+        <p><strong>Seasonal sale</strong> — extra savings on select styles while supplies last.</p>
+        <a href="#womens" class="link">Shop sale picks</a>
+      </div>
+    </section>
+
+    <section id="womens" class="section products">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>New arrivals — women’s</h2>
+          <p>Tops, dresses, knits, and outerwear. Click any item to view details and add to cart.</p>
+        </div>
+        <div class="product-grid" id="product-grid-featured"></div>
+      </div>
+    </section>
+
+    <section id="mens" class="section wrap">
+      <div class="section-head">
+        <h2>Men’s</h2>
+        <p>Shirts, pants, knits, and shoes. Open a product page for full information.</p>
+      </div>
+      <div class="product-grid" id="product-grid-mens"></div>
+    </section>
+
+    <section id="accessories" class="section wrap">
+      <div class="section-head">
+        <h2>Accessories</h2>
+        <p>Bags, jewelry, footwear, and belts.</p>
+      </div>
+      <div class="product-grid cols-3" id="product-grid-accessories"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo logo--brand logo--footer" aria-label="Velomora Shop — Home">
+          <img class="logo-mark" src="assets/logo-mark.svg" width="40" height="40" alt="" />
+          <span class="logo-type">
+            <span class="logo-type__name">Velomora</span>
+            <span class="logo-type__shop">shop</span>
+          </span>
+        </a>
+        <p>
+          Independent clothing &amp; accessories retailer. Designed in-house, shipped from our U.S. warehouse to customers
+          nationwide.
+        </p>
+        <p class="foot-pay" aria-label="Accepted payment methods">
+          <span>Visa</span> · <span>Mastercard</span> · <span>Amex</span> · <span>PayPal</span> · <span>Apple Pay</span>
+        </p>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop.html#womens">New arrivals</a></li>
+          <li><a href="shop.html#womens">Women</a></li>
+          <li><a href="shop.html#mens">Men</a></li>
+          <li><a href="shop.html#accessories">Accessories</a></li>
+          <li><a href="shop.html#sale">Sale</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="index.html#customer-care">Shipping &amp; tracking</a></li>
+          <li><a href="index.html#customer-care">Returns &amp; exchanges</a></li>
+          <li><a href="index.html#size-guide">Size guide</a></li>
+          <li><a href="index.html#customer-care">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html#story">About Velomora</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Velomora Shop. All rights reserved.</span>
+      <span class="foot-bottom__links">
+        <a href="https://unsplash.com" rel="noopener noreferrer">Photography credits</a>
+      </span>
+    </div>
+  </footer>
+
+  <div id="cart-root" class="cart-root" aria-hidden="true">
+    <div class="cart-backdrop" aria-hidden="true"></div>
+    <aside class="cart-panel" role="dialog" aria-label="Shopping cart">
+      <div class="cart-panel-header">
+        <h2>Shopping cart</h2>
+        <button type="button" class="cart-close" id="cart-close" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-lines" id="cart-lines"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-amount">$0.00</span>
+        </div>
+        <button type="button" class="cart-checkout" id="cart-checkout-btn" disabled>Checkout</button>
+        <p class="cart-note">Taxes and shipping calculated at checkout. SSL-secure payment.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div id="checkout-root" class="checkout-root" aria-hidden="true">
+    <div class="checkout-dialog" role="dialog" aria-labelledby="checkout-title" aria-modal="true">
+      <h2 id="checkout-title">Checkout</h2>
+      <p>Enter your email and shipping address. You’ll review payment on the next step in a full store integration.</p>
+      <form id="checkout-form">
+        <div class="checkout-field">
+          <label for="checkout-email">Email (for order confirmation)</label>
+          <input type="email" id="checkout-email" name="email" required autocomplete="email" />
+        </div>
+        <div class="checkout-field">
+          <label for="checkout-address">Shipping address</label>
+          <textarea id="checkout-address" name="address" required placeholder="Street, city, state, ZIP"></textarea>
+        </div>
+        <p class="checkout-legal">
+          By placing an order you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        <div class="checkout-actions">
+          <button type="button" class="checkout-cancel" id="checkout-cancel">Back to bag</button>
+          <button type="submit" class="checkout-submit">Place order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="products-data.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

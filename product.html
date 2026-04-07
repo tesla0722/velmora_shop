@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — Velomora Shop</title>
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-utility">
+      <div class="wrap header-utility__inner">
+        <span>Free standard shipping on orders <strong>$100+</strong></span>
+        <span class="header-utility__dot" aria-hidden="true"></span>
+        <span>Free returns within <strong>30 days</strong></span>
+        <span class="header-utility__dot" aria-hidden="true"></span>
+        <a href="tel:+18005550199" class="header-utility__link">1-800-555-0199</a>
+        <span class="header-utility__dot header-utility__dot--hide-mobile" aria-hidden="true"></span>
+        <a href="index.html#customer-care" class="header-utility__link header-utility__link--hide-mobile">Help center</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="wrap inner">
+        <a href="index.html" class="logo logo--brand" aria-label="Velomora Shop — Home">
+          <img class="logo-mark" src="assets/logo-mark.svg" width="48" height="48" alt="" />
+          <span class="logo-type">
+            <span class="logo-type__name">Velomora</span>
+            <span class="logo-type__shop">shop</span>
+          </span>
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html#womens">New arrivals</a></li>
+            <li><a href="shop.html#womens">Women</a></li>
+            <li><a href="shop.html#mens">Men</a></li>
+            <li><a href="shop.html#accessories">Accessories</a></li>
+            <li><a href="shop.html#sale">Sale</a></li>
+            <li><a href="index.html#story">Our story</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="header-cart" id="header-cart-btn" aria-label="Open shopping cart">
+            Cart
+            <span class="header-cart-count" id="header-cart-count" hidden></span>
+          </button>
+          <a href="shop.html" class="header-cta header-cta--link">Shop</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="product-detail-mount" class="product-page-main"></main>
+
+  <footer class="product-page-footer">
+    <div class="wrap foot-bottom">
+      <span>© 2026 Velomora Shop</span>
+      <span><a href="shop.html">Continue shopping</a></span>
+    </div>
+  </footer>
+
+  <div id="cart-root" class="cart-root" aria-hidden="true">
+    <div class="cart-backdrop" aria-hidden="true"></div>
+    <aside class="cart-panel" role="dialog" aria-label="Shopping cart">
+      <div class="cart-panel-header">
+        <h2>Shopping cart</h2>
+        <button type="button" class="cart-close" id="cart-close" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-lines" id="cart-lines"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-amount">$0.00</span>
+        </div>
+        <button type="button" class="cart-checkout" id="cart-checkout-btn" disabled>Checkout</button>
+        <p class="cart-note">Taxes and shipping calculated at checkout. SSL-secure payment.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div id="checkout-root" class="checkout-root" aria-hidden="true">
+    <div class="checkout-dialog" role="dialog" aria-labelledby="checkout-title" aria-modal="true">
+      <h2 id="checkout-title">Checkout</h2>
+      <p>Enter your email and shipping address. You’ll review payment on the next step in a full store integration.</p>
+      <form id="checkout-form">
+        <div class="checkout-field">
+          <label for="checkout-email">Email (for order confirmation)</label>
+          <input type="email" id="checkout-email" name="email" required autocomplete="email" />
+        </div>
+        <div class="checkout-field">
+          <label for="checkout-address">Shipping address</label>
+          <textarea id="checkout-address" name="address" required placeholder="Street, city, state, ZIP"></textarea>
+        </div>
+        <p class="checkout-legal">
+          By placing an order you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        <div class="checkout-actions">
+          <button type="button" class="checkout-cancel" id="checkout-cancel">Back to bag</button>
+          <button type="submit" class="checkout-submit">Place order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="products-data.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

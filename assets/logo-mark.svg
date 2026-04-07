@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Velomora Shop">
+  <defs>
+    <linearGradient id="vmG" x1="6%" y1="8%" x2="94%" y2="92%">
+      <stop offset="0%" stop-color="#f0dcc8"/>
+      <stop offset="32%" stop-color="#c4a484"/>
+      <stop offset="65%" stop-color="#b76e79"/>
+      <stop offset="100%" stop-color="#5c3038"/>
+    </linearGradient>
+    <linearGradient id="vmSheen" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="45%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1a1614" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#vmG)"/>
+  <circle cx="32" cy="32" r="30" fill="url(#vmSheen)"/>
+  <!-- Soft arc suggesting fabric / motion -->
+  <path
+    d="M14 40 Q32 24 50 40"
+    fill="none"
+    stroke="#fdf8f5"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-opacity="0.38"
+  />
+  <!-- V monogram -->
+  <path
+    d="M19 18 L32 46 L45 18"
+    fill="none"
+    stroke="#fdf8f5"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Accent jewel -->
+  <circle cx="32" cy="44" r="2.5" fill="#fdf8f5" fill-opacity="0.9"/>
+</svg>
